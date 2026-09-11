@@ -1,12 +1,8 @@
-# Nome do projeto
+# Portal Terra — correção com Flexbox
 
-<!--
-Substitua “Nome do projeto” pelo nome da atividade e escreva abaixo uma breve
-descrição sobre o que foi desenvolvido.
--->
+Template didático inspirado no wireframe fornecido para a aula de Redes de Computadores.
 
-Apresente aqui uma breve descrição do projeto, seus objetivos e o contexto em
-que ele foi desenvolvido.
+> A página utiliza apenas HTML e CSS, sem frameworks.
 
 ## Tecnologias e ferramentas
 
@@ -19,15 +15,15 @@ que ele foi desenvolvido.
 ## Estrutura do projeto
 
 ```text
-nome-do-projeto/
+rci-portal-terra/
 ├── .github/
 │   └── pull_request_template.md
 ├── .vscode/
 │   ├── extensions.json
 │   └── settings.json
 ├── css/
-│   ├── global.css
-│   └── reset.css
+│   ├── reset.css
+│   └── styles.css
 ├── docs/
 │   ├── criar-repositorio-base.md
 │   └── guia-padronizacao-codigo.md
@@ -42,51 +38,48 @@ nome-do-projeto/
 └── README.md
 ```
 
-O arquivo `.gitkeep` mantém o diretório `img/` no versionamento enquanto ele
-estiver vazio. Depois de adicionar a primeira imagem, esse arquivo pode ser
-removido.
-
 ## Executar o projeto
 
-Abra o arquivo `index.html` utilizando a extensão Live Server do Visual Studio
-Code.
-
-Também é possível abrir o arquivo `index.html` diretamente no navegador.
+Abra o arquivo `index.html` utilizando a extensão Live Server do Visual Studio Code.
 
 ## Documentação
 
-- [Guia de padronização do código](./docs/guia-padronizacao-codigo.md):
-  explica as configurações utilizadas pelo projeto;
-- [Como criar um repositório-base](./docs/criar-repositorio-base.md):
-  apresenta como este template foi estruturado.
-
-Os materiais didáticos de HTML e CSS estão disponíveis no repositório
-[Fundamentos de Desenvolvimento Web I](https://github.com/ifc-dev-web2/rc-web1-fundamentos).
+Os materiais didáticos de HTML e CSS estão disponíveis no repositório [Fundamentos de Desenvolvimento Web I](https://github.com/ifc-dev-web2/rc-web1-fundamentos).
 
 ---
 
-## Orientações para utilizar este template
+## Objetivos da aula
 
-Este repositório fornece uma estrutura inicial para atividades de
-Desenvolvimento Web com HTML e CSS.
+- reconhecer os elementos pai e filho de um container flexível;
+- utilizar `display: flex` para organizar elementos em linha;
+- aplicar `justify-content`, `align-items` e `gap`;
+- controlar o espaço dos elementos com `flex` e `flex-basis`;
+- permitir que os elementos quebrem de linha com `flex-wrap`;
+- alterar a direção dos elementos em telas menores com `flex-direction`;
+- criar um layout responsivo usando media queries.
 
-### 1. Criar seu repositório
+## Onde o Flexbox foi aplicado
 
-1. Clique em **Use this template**;
-2. selecione **Create a new repository**;
-3. informe o nome solicitado para a atividade;
-4. escolha a visibilidade indicada pelo professor;
-5. clique em **Create repository**.
+| Região    | Classe principal    | Conceito trabalhado                  |
+| --------- | ------------------- | ------------------------------------ |
+| Cabeçalho | `.topo__conteudo`   | `justify-content: space-between`     |
+| Menu      | `.navegacao__lista` | alinhamento, `gap` e `flex-wrap`     |
+| Placar    | `.placar__jogo`     | alinhamento central em linha         |
+| Destaques | `.destaques`        | divisão proporcional com `flex`      |
+| Chamadas  | `.chamadas`         | quatro itens flexíveis em linha      |
+| Editorias | `.editorias`        | quatro colunas de mesma largura      |
+| Celular   | media queries       | quebra de linha e mudança de direção |
 
-> Não faça um fork nem clone diretamente o repositório-base. Primeiro utilize
-> **Use this template** para criar um novo repositório em sua conta.
+## Roteiro
 
-### 2. Clonar o repositório criado
-
-Acesse o novo repositório em sua conta do GitHub. Clique no botão **Code**,
-selecione **HTTPS** e copie o endereço apresentado.
-
-No terminal, acesse o diretório em que deseja armazenar o projeto e execute:
+1. Identifique os grandes blocos visuais da página.
+2. Lembre-se que o Flexbox deve ser aplicado ao elemento pai.
+3. Comece pelo cabeçalho e entenda o eixo principal e o eixo transversal.
+4. Monte os dois destaques e compare `flex: 2` com `flex: 1`.
+5. Crie as quatro chamadas usando `flex: 1` e `gap`.
+6. Repita o padrão na seção de editorias.
+7. Reduza a largura do navegador e observe o efeito das media queries.
+8. Troque os blocos coloridos por imagens locais.
 
 ```bash
 git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
@@ -107,33 +100,18 @@ code .
 > Substitua `SEU-USUARIO` pelo seu usuário do GitHub e
 > `NOME-DO-REPOSITORIO` pelo nome definido para a atividade.
 
-### 3. Personalizar o projeto
-
-Depois de criar e clonar o repositório:
-
-- altere o nome e a descrição no início deste README;
-- atualize o título e o conteúdo do `index.html`;
-- desenvolva os estilos nos arquivos do diretório `css/`;
-- armazene as imagens no diretório `img/`;
-- mantenha os arquivos de configuração versionados;
-- remova estas orientações iniciais quando elas não forem mais necessárias.
-
 ## Contexto acadêmico
 
-| Informação | Descrição |
-| --- | --- |
-| Instituição | Instituto Federal Catarinense — Campus Araquari |
-| Curso | Técnico em Redes de Computadores |
-| Disciplina | Desenvolvimento Web I |
+| Informação  | Descrição                                         |
+| ----------- | ------------------------------------------------- |
+| Instituição | Instituto Federal Catarinense — Campus Araquari   |
+| Curso       | Técnico em Redes de Computadores                  |
+| Disciplina  | Desenvolvimento Web I                             |
 | Organização | [IFC Dev Web II](https://github.com/ifc-dev-web2) |
 
 ## Autoria
 
-Projeto desenvolvido por **Nome do estudante** durante as atividades de
-Desenvolvimento Web I.
-
-Template elaborado pelo
-[Prof. Cristofer Sousa](https://github.com/cristofersousa).
+Projeto desenvolvido por **[Prof. Cristofer Sousa](https://github.com/cristofersousa)** durante as atividades de Desenvolvimento Web I.
 
 ## Licença
 

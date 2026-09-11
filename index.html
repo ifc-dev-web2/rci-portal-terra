@@ -6,29 +6,229 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Projeto HTML e CSS</title>
+    <meta
+      name="description"
+      content="Portal de notícias criado para praticar Flexbox."
+    />
+    <title>Portal Notícias — Prática com Flexbox</title>
     <link
       rel="stylesheet"
       href="./css/reset.css"
     />
-
     <link
       rel="stylesheet"
-      href="./css/global.css"
+      href="./css/styles.css"
     />
   </head>
-
   <body>
-    <header>
-      <h1>Projeto HTML e CSS</h1>
+    <!-- menu laranja-->
+    <header class="topo">
+      <div class="topo__barra">
+        <div class="container topo__conteudo">
+          <div class="marca">
+            <span class="menu">☰</span><strong>portal</strong
+            ><span class="marca__icone">◆</span>
+          </div>
+          <div class="atalhos">
+            <a href="#">PORTAL MAIL</a><a href="#">ÁREA DO ALUNO</a
+            ><span>✉</span><span>●</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu categorias-->
+
+      <nav
+        class="navegacao"
+        aria-label="Navegação principal"
+      >
+        <div class="container navegacao__lista">
+          <a href="#">JOINVILLE</a><a href="#">ELEIÇÕES</a
+          ><a href="#">MINHA REGIÃO</a> <a href="#">FUTEBOL</a
+          ><a href="#">TECNOLOGIA</a><a href="#">NOTÍCIAS</a>
+          <a href="#">ENTRETÊ</a><a href="#">VIDA E ESTILO</a
+          ><a href="#">ECONOMIA</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <p>Substitua este conteúdo pelo conteúdo do seu projeto.</p>
+      <section
+        class="placar container"
+        aria-label="Placar esportivo"
+      >
+        <div class="placar__abas">
+          <button>▣ Fixar no canto</button><strong>Esportes <sup>1</sup></strong
+          ><span>Destaques <sup>1</sup></span>
+        </div>
+        <article class="placar__jogo">
+          <div class="time">
+            <span class="escudo escudo--vermelho">A</span><b>ARS</b>
+          </div>
+          <div class="resultado">
+            <small>Campeonato Inglês<br />2º tempo</small><strong>2 × 1</strong>
+          </div>
+          <div class="time">
+            <span class="escudo escudo--azul">C</span><b>CHE</b>
+          </div>
+        </article>
+      </section>
+
+      <section class="destaques container">
+        <article class="destaque destaque--principal">
+          <div
+            class="foto foto--piloto"
+            role="img"
+            aria-label="Espaço reservado para fotografia da notícia principal"
+          >
+            FOTO PRINCIPAL
+          </div>
+          <div class="destaque__texto">
+            <span class="categoria">FÓRMULA 1</span>
+            <h1>
+              Piloto faz corrida histórica e vence o GP após largar em 19º
+            </h1>
+            <ul>
+              <li>Disputa pelas primeiras posições agita a corrida</li>
+              <li>Equipe relata melhorias importantes no carro</li>
+              <li>Veja a classificação do campeonato</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="destaque destaque--secundario">
+          <div
+            class="foto foto--corrida"
+            role="img"
+            aria-label="Espaço reservado para fotografia de corrida"
+          >
+            IMAGEM DA CORRIDA
+          </div>
+          <span class="ao-vivo">● AO VIVO</span>
+          <span class="categoria">AUTOMOBILISMO</span>
+          <h2>Assista às corridas da Stock Light em Curvelo</h2>
+        </article>
+      </section>
+
+      <section
+        class="chamadas container"
+        aria-label="Chamadas rápidas"
+      >
+        <article class="chamada">
+          <div class="miniatura miniatura--1"></div>
+          <div>
+            <span>CASO EM MARINGÁ</span>
+            <h3>Médica é encontrada morta ao lado de bebê</h3>
+          </div>
+        </article>
+        <article class="chamada">
+          <div class="miniatura miniatura--2"></div>
+          <div>
+            <span>LOTERIA</span>
+            <h3>Veja as dezenas e o prêmio acumulado</h3>
+          </div>
+        </article>
+        <article class="chamada">
+          <div class="miniatura miniatura--3"></div>
+          <div>
+            <span>CARNAVAL</span>
+            <h3>Artista é anunciada como rainha de bateria</h3>
+          </div>
+        </article>
+        <article class="chamada">
+          <div class="miniatura miniatura--4"></div>
+          <div>
+            <span>STOCK CAR</span>
+            <h3>Carro controlado por computador vence em Curvelo</h3>
+          </div>
+        </article>
+      </section>
+
+      <section class="editorias container">
+        <article class="editoria editoria--noticias">
+          <h2>NOTÍCIAS</h2>
+          <div class="editoria__destaque">
+            <div class="miniatura miniatura--5"></div>
+            <div>
+              <span>GIRO DE NOTÍCIAS</span>
+              <h3>Confira os principais acontecimentos desta manhã</h3>
+            </div>
+          </div>
+          <ul>
+            <li>Novas medidas são anunciadas nesta sexta-feira</li>
+            <li>Obras alteram o trânsito no centro da cidade</li>
+            <li>Previsão aponta mudança no tempo</li>
+          </ul>
+          <div class="editoria__rodape">
+            <div class="miniatura miniatura--6"></div>
+            <h3>Vulcão entra em erupção na Indonésia</h3>
+          </div>
+        </article>
+        <article class="editoria editoria--esportes">
+          <h2>ESPORTES</h2>
+          <div class="editoria__destaque">
+            <div class="miniatura miniatura--7"></div>
+            <div>
+              <span>GIRO ESPORTIVO</span>
+              <h3>Barcelona goleia e mantém liderança isolada</h3>
+            </div>
+          </div>
+          <ul>
+            <li>Confira os jogos de hoje pelo país</li>
+            <li>Mercado da bola tem novidades</li>
+            <li>Clube anuncia novo treinador</li>
+          </ul>
+          <div class="editoria__rodape">
+            <div class="miniatura miniatura--8"></div>
+            <h3>Mirassol vence e entra no G4</h3>
+          </div>
+        </article>
+        <article class="editoria editoria--entrete">
+          <h2>ENTRETÊ</h2>
+          <div class="editoria__destaque">
+            <div class="miniatura miniatura--9"></div>
+            <div>
+              <span>TV E FAMOSOS</span>
+              <h3>Apresentadora estreia novo programa</h3>
+            </div>
+          </div>
+          <ul>
+            <li>Atriz anuncia novo projeto nas redes</li>
+            <li>Festival divulga programação completa</li>
+            <li>Série nacional ganha nova temporada</li>
+          </ul>
+          <div class="editoria__rodape">
+            <div class="miniatura miniatura--10"></div>
+            <h3>Ator fala sobre novo personagem</h3>
+          </div>
+        </article>
+        <article class="editoria editoria--estilo">
+          <h2>VIDA E ESTILO</h2>
+          <div class="editoria__destaque">
+            <div class="miniatura miniatura--11"></div>
+            <div>
+              <span>FESTIVAL</span>
+              <h3>Rock in Rio anuncia novas atrações</h3>
+            </div>
+          </div>
+          <ul>
+            <li>Veja a programação completa do evento</li>
+            <li>Artista publica vídeo raro de show</li>
+            <li>Fotos marcam a história do festival</li>
+          </ul>
+          <div class="editoria__rodape">
+            <div class="miniatura miniatura--12"></div>
+            <h3>Influenciador morre aos 43 anos</h3>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
-      <p>Desenvolvido durante as aulas de Desenvolvimento Web.</p>
+      <div class="container">
+        <strong>Portal Notícias</strong
+        ><span>Exercício de HTML e CSS com Flexbox</span>
+      </div>
     </footer>
   </body>
 </html>
