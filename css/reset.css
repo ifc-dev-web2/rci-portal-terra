@@ -1,0 +1,82 @@
+/* ==========================================================================
+   1. MODELO DE CAIXA
+   ========================================================================== */
+
+/*
+ * Mantém a largura e a altura declaradas mesmo quando o elemento recebe
+ * padding ou border.
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. ESPAÇAMENTOS INICIAIS
+   ========================================================================== */
+
+/*
+ * Remove somente as margens mais comuns de layout. Os recuos e marcadores das
+ * listas são preservados para manter sua aparência e seu significado visual.
+ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* ==========================================================================
+   3. DOCUMENTO E CONTEÚDO
+   ========================================================================== */
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Evita espaços abaixo das mídias e impede que elas ultrapassem a largura do
+ * elemento que as contém.
+ */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   4. FORMULÁRIOS
+   ========================================================================== */
+
+/* Faz com que os controles utilizem a mesma tipografia do restante da página. */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ==========================================================================
+   5. TEXTOS
+   ========================================================================== */
+
+/* Impede que palavras longas ou endereços ultrapassem seus contêineres. */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}

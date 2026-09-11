@@ -1,0 +1,16 @@
+:root {
+  --color-background: #f8fafc;
+  --color-text: #0f172a;
+  --color-primary: #2563eb;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: Arial, Helvetica, sans-serif;
+}
