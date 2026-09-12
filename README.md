@@ -25,7 +25,6 @@ rci-portal-terra/
 │   ├── reset.css
 │   └── styles.css
 ├── docs/
-│   ├── criar-repositorio-base.md
 │   └── guia-padronizacao-codigo.md
 ├── img/
 │   └── .gitkeep
